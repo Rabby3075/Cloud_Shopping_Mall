@@ -29,50 +29,44 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.admin = new System.Windows.Forms.RadioButton();
+            this.employee = new System.Windows.Forms.RadioButton();
+            this.customer = new System.Windows.Forms.RadioButton();
+            this.forget = new System.Windows.Forms.LinkLabel();
+            this.emailallert = new System.Windows.Forms.PictureBox();
+            this.passwordallert = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.passwordallert);
+            this.panel1.Controls.Add(this.emailallert);
+            this.panel1.Controls.Add(this.forget);
+            this.panel1.Controls.Add(this.customer);
+            this.panel1.Controls.Add(this.employee);
+            this.panel1.Controls.Add(this.admin);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.password);
+            this.panel1.Controls.Add(this.email);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(226, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(337, 315);
             this.panel1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(112, 275);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Forget Password";
             // 
             // button1
             // 
@@ -85,6 +79,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
@@ -98,20 +93,20 @@
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(151, 165);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 22);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.password.Location = new System.Drawing.Point(133, 165);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(184, 22);
+            this.password.TabIndex = 7;
+            this.password.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // email
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 22);
-            this.textBox1.TabIndex = 6;
+            this.email.Location = new System.Drawing.Point(133, 123);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(184, 22);
+            this.email.TabIndex = 6;
             // 
             // label3
             // 
@@ -137,45 +132,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Email";
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton3.Location = new System.Drawing.Point(228, 74);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(89, 21);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Customer";
-            this.radioButton3.UseVisualStyleBackColor = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton2.Location = new System.Drawing.Point(115, 74);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 21);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Employee";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton1.Location = new System.Drawing.Point(25, 74);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(68, 21);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Admin";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -187,6 +143,82 @@
             this.label1.Size = new System.Drawing.Size(140, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome";
+            // 
+            // admin
+            // 
+            this.admin.AutoSize = true;
+            this.admin.BackColor = System.Drawing.Color.Transparent;
+            this.admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.admin.Location = new System.Drawing.Point(25, 74);
+            this.admin.Name = "admin";
+            this.admin.Size = new System.Drawing.Size(73, 21);
+            this.admin.TabIndex = 11;
+            this.admin.TabStop = true;
+            this.admin.Text = "Admin";
+            this.admin.UseVisualStyleBackColor = false;
+            // 
+            // employee
+            // 
+            this.employee.AutoSize = true;
+            this.employee.BackColor = System.Drawing.Color.Transparent;
+            this.employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.employee.Location = new System.Drawing.Point(115, 74);
+            this.employee.Name = "employee";
+            this.employee.Size = new System.Drawing.Size(99, 21);
+            this.employee.TabIndex = 12;
+            this.employee.TabStop = true;
+            this.employee.Text = "Employee";
+            this.employee.UseVisualStyleBackColor = false;
+            // 
+            // customer
+            // 
+            this.customer.AutoSize = true;
+            this.customer.BackColor = System.Drawing.Color.Transparent;
+            this.customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customer.Location = new System.Drawing.Point(220, 74);
+            this.customer.Name = "customer";
+            this.customer.Size = new System.Drawing.Size(97, 21);
+            this.customer.TabIndex = 13;
+            this.customer.TabStop = true;
+            this.customer.Text = "Customer";
+            this.customer.UseVisualStyleBackColor = false;
+            // 
+            // forget
+            // 
+            this.forget.AutoSize = true;
+            this.forget.BackColor = System.Drawing.Color.Transparent;
+            this.forget.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.forget.Location = new System.Drawing.Point(112, 276);
+            this.forget.Name = "forget";
+            this.forget.Size = new System.Drawing.Size(114, 17);
+            this.forget.TabIndex = 14;
+            this.forget.TabStop = true;
+            this.forget.Text = "Forget Password";
+            // 
+            // emailallert
+            // 
+            this.emailallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.emailallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.emailallert.Location = new System.Drawing.Point(285, 123);
+            this.emailallert.Name = "emailallert";
+            this.emailallert.Size = new System.Drawing.Size(32, 18);
+            this.emailallert.TabIndex = 15;
+            this.emailallert.TabStop = false;
+            this.emailallert.Visible = false;
+            // 
+            // passwordallert
+            // 
+            this.passwordallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.passwordallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.passwordallert.Location = new System.Drawing.Point(285, 165);
+            this.passwordallert.Name = "passwordallert";
+            this.passwordallert.Size = new System.Drawing.Size(32, 18);
+            this.passwordallert.TabIndex = 16;
+            this.passwordallert.TabStop = false;
+            this.passwordallert.Visible = false;
             // 
             // LoginPage
             // 
@@ -202,6 +234,8 @@
             this.Load += new System.EventHandler(this.LoginPage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,16 +243,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel forget;
+        private System.Windows.Forms.RadioButton customer;
+        private System.Windows.Forms.RadioButton employee;
+        private System.Windows.Forms.RadioButton admin;
+        private System.Windows.Forms.PictureBox passwordallert;
+        private System.Windows.Forms.PictureBox emailallert;
     }
 }

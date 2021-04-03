@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cloud_Shopping_Mall.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,48 @@ namespace Cloud_Shopping_Mall.View
         private void LoginPage_Load(object sender, EventArgs e)
         {
             panel1.BackColor= Color.FromArgb(100, 0, 0, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Email = email.Text.Trim();
+            string Password = password.Text.Trim();
+            if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
+            {
+                if (string.IsNullOrEmpty(Email))
+                {
+                    emailallert.Visible = true;
+                }
+                else
+                {
+                    emailallert.Visible = false;
+                }
+                if (string.IsNullOrEmpty(Password))
+                {
+                    passwordallert.Visible = true;
+
+                }
+                else
+                {
+                    passwordallert.Visible = false;
+                }
+                MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (admin.Checked == true)
+                {
+                    dynamic AdminResult = AdminController.AuthenticateAdmin(Email, Password);
+                    if (AdminResult != null)
+                    {
+                        new AdminPortal().Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("User Not Valid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
     }
 }

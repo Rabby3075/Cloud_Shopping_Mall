@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+  
 namespace Cloud_Shopping_Mall.View
 {
     public partial class AdminRegistation : Form
@@ -94,9 +94,19 @@ namespace Cloud_Shopping_Mall.View
                 MessageBox.Show("Please enter atleast 6 digit password", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
             }
-            
-            
-            
+            else if (email.Text.Contains(".com")==false)
+            {
+                emailallert.Visible = true;
+                MessageBox.Show("Please enter your  correct email address", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+ 
+            else if ((mobile.Text.Substring(0,2) != "01"))
+            {
+                mobileallert.Visible = true;
+                MessageBox.Show("Wrong mobile operator", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
             else
             {
                 var admin = new
