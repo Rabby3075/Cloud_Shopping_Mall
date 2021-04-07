@@ -27,6 +27,10 @@ namespace Cloud_Shopping_Mall.View
         {
             string Email = email.Text.Trim();
             string Password = password.Text.Trim();
+            if (admin.Checked == false && employee.Checked == false && customer.Checked == false)
+            {
+                MessageBox.Show("Please select a category", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
             {
                 if (string.IsNullOrEmpty(Email))
@@ -63,6 +67,28 @@ namespace Cloud_Shopping_Mall.View
                     }
                 }
             }
+        }
+
+        private void passcheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (passcheck.Checked)
+            {
+                password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                password.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void forget_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new Register().Show();
         }
     }
 }

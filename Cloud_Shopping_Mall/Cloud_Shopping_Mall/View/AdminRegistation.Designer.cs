@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.genderallert = new System.Windows.Forms.PictureBox();
+            this.passwordallert = new System.Windows.Forms.PictureBox();
+            this.emailallert = new System.Windows.Forms.PictureBox();
+            this.mobileallert = new System.Windows.Forms.PictureBox();
+            this.addressallert = new System.Windows.Forms.PictureBox();
+            this.nameallert = new System.Windows.Forms.PictureBox();
             this.gender = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,24 +49,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nameallert = new System.Windows.Forms.PictureBox();
-            this.addressallert = new System.Windows.Forms.PictureBox();
-            this.mobileallert = new System.Windows.Forms.PictureBox();
-            this.emailallert = new System.Windows.Forms.PictureBox();
-            this.passwordallert = new System.Windows.Forms.PictureBox();
-            this.genderallert = new System.Windows.Forms.PictureBox();
+            this.confirm = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nameallert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addressallert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobileallert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addressallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameallert)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.confirm);
             this.panel1.Controls.Add(this.genderallert);
             this.panel1.Controls.Add(this.passwordallert);
             this.panel1.Controls.Add(this.emailallert);
@@ -83,8 +85,74 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(118, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(544, 399);
+            this.panel1.Size = new System.Drawing.Size(544, 455);
             this.panel1.TabIndex = 0;
+            // 
+            // genderallert
+            // 
+            this.genderallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.genderallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.genderallert.Location = new System.Drawing.Point(372, 206);
+            this.genderallert.Name = "genderallert";
+            this.genderallert.Size = new System.Drawing.Size(33, 24);
+            this.genderallert.TabIndex = 19;
+            this.genderallert.TabStop = false;
+            this.genderallert.Visible = false;
+            // 
+            // passwordallert
+            // 
+            this.passwordallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.passwordallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.passwordallert.Location = new System.Drawing.Point(469, 295);
+            this.passwordallert.Name = "passwordallert";
+            this.passwordallert.Size = new System.Drawing.Size(33, 24);
+            this.passwordallert.TabIndex = 18;
+            this.passwordallert.TabStop = false;
+            this.passwordallert.Visible = false;
+            // 
+            // emailallert
+            // 
+            this.emailallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.emailallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.emailallert.Location = new System.Drawing.Point(469, 250);
+            this.emailallert.Name = "emailallert";
+            this.emailallert.Size = new System.Drawing.Size(33, 24);
+            this.emailallert.TabIndex = 17;
+            this.emailallert.TabStop = false;
+            this.emailallert.Visible = false;
+            // 
+            // mobileallert
+            // 
+            this.mobileallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.mobileallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mobileallert.Location = new System.Drawing.Point(469, 164);
+            this.mobileallert.Name = "mobileallert";
+            this.mobileallert.Size = new System.Drawing.Size(33, 24);
+            this.mobileallert.TabIndex = 16;
+            this.mobileallert.TabStop = false;
+            this.mobileallert.Visible = false;
+            // 
+            // addressallert
+            // 
+            this.addressallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.addressallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addressallert.Location = new System.Drawing.Point(469, 124);
+            this.addressallert.Name = "addressallert";
+            this.addressallert.Size = new System.Drawing.Size(33, 24);
+            this.addressallert.TabIndex = 15;
+            this.addressallert.TabStop = false;
+            this.addressallert.Visible = false;
+            // 
+            // nameallert
+            // 
+            this.nameallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
+            this.nameallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.nameallert.Location = new System.Drawing.Point(469, 82);
+            this.nameallert.Name = "nameallert";
+            this.nameallert.Size = new System.Drawing.Size(33, 24);
+            this.nameallert.TabIndex = 14;
+            this.nameallert.TabStop = false;
+            this.nameallert.Visible = false;
             // 
             // gender
             // 
@@ -231,71 +299,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Create An Account";
             // 
-            // nameallert
+            // confirm
             // 
-            this.nameallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.nameallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.nameallert.Location = new System.Drawing.Point(469, 82);
-            this.nameallert.Name = "nameallert";
-            this.nameallert.Size = new System.Drawing.Size(33, 24);
-            this.nameallert.TabIndex = 14;
-            this.nameallert.TabStop = false;
-            this.nameallert.Visible = false;
-            // 
-            // addressallert
-            // 
-            this.addressallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.addressallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addressallert.Location = new System.Drawing.Point(469, 124);
-            this.addressallert.Name = "addressallert";
-            this.addressallert.Size = new System.Drawing.Size(33, 24);
-            this.addressallert.TabIndex = 15;
-            this.addressallert.TabStop = false;
-            this.addressallert.Visible = false;
-            // 
-            // mobileallert
-            // 
-            this.mobileallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.mobileallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mobileallert.Location = new System.Drawing.Point(469, 164);
-            this.mobileallert.Name = "mobileallert";
-            this.mobileallert.Size = new System.Drawing.Size(33, 24);
-            this.mobileallert.TabIndex = 16;
-            this.mobileallert.TabStop = false;
-            this.mobileallert.Visible = false;
-            // 
-            // emailallert
-            // 
-            this.emailallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.emailallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.emailallert.Location = new System.Drawing.Point(469, 250);
-            this.emailallert.Name = "emailallert";
-            this.emailallert.Size = new System.Drawing.Size(33, 24);
-            this.emailallert.TabIndex = 17;
-            this.emailallert.TabStop = false;
-            this.emailallert.Visible = false;
-            // 
-            // passwordallert
-            // 
-            this.passwordallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.passwordallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.passwordallert.Location = new System.Drawing.Point(469, 295);
-            this.passwordallert.Name = "passwordallert";
-            this.passwordallert.Size = new System.Drawing.Size(33, 24);
-            this.passwordallert.TabIndex = 18;
-            this.passwordallert.TabStop = false;
-            this.passwordallert.Visible = false;
-            // 
-            // genderallert
-            // 
-            this.genderallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
-            this.genderallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.genderallert.Location = new System.Drawing.Point(372, 206);
-            this.genderallert.Name = "genderallert";
-            this.genderallert.Size = new System.Drawing.Size(33, 24);
-            this.genderallert.TabIndex = 19;
-            this.genderallert.TabStop = false;
-            this.genderallert.Visible = false;
+            this.confirm.AutoSize = true;
+            this.confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm.ForeColor = System.Drawing.Color.Black;
+            this.confirm.Location = new System.Drawing.Point(61, 396);
+            this.confirm.Name = "confirm";
+            this.confirm.Padding = new System.Windows.Forms.Padding(4);
+            this.confirm.Size = new System.Drawing.Size(404, 47);
+            this.confirm.TabIndex = 20;
+            this.confirm.Text = "Admin Registration Done";
+            this.confirm.Visible = false;
             // 
             // AdminRegistation
             // 
@@ -310,12 +326,12 @@
             this.Load += new System.EventHandler(this.AdminRegistation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nameallert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addressallert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobileallert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addressallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameallert)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,5 +359,6 @@
         private System.Windows.Forms.PictureBox mobileallert;
         private System.Windows.Forms.PictureBox addressallert;
         private System.Windows.Forms.PictureBox nameallert;
+        private System.Windows.Forms.Label confirm;
     }
 }

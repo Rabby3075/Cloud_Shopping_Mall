@@ -79,33 +79,33 @@ namespace Cloud_Shopping_Mall.View
                 {
                     genderallert.Visible = false;
                 }
-                MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else if (mobile.Text.Length != 11)
+                 if (mobile.Text.Length != 11)
             {
                 mobileallert.Visible = true;
                 MessageBox.Show("Please enter your 11 digit mobile no", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
-            else if (password.Text.Length < 6)
+            if (password.Text.Length < 6)
             {
                 passwordallert.Visible = true;
                 MessageBox.Show("Please enter atleast 6 digit password", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
-            else if (email.Text.Contains(".com")==false)
+            if (email.Text.Contains(".com") == false)
             {
                 emailallert.Visible = true;
                 MessageBox.Show("Please enter your  correct email address", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
- 
-            else if ((mobile.Text.Substring(0,2) != "01"))
+
+            if ((mobile.Text.Substring(0, 2) != "01"))
             {
                 mobileallert.Visible = true;
                 MessageBox.Show("Wrong mobile operator", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+            
 
             else
             {
@@ -123,7 +123,8 @@ namespace Cloud_Shopping_Mall.View
                 var result = AdminController.AddAdmin(admin);
                 if (result)
                 {
-                    MessageBox.Show("Admin Registration done", "Successful Registration", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    confirm.Visible = true;
+                    new LoginPage().Show();
                 }
                
             }

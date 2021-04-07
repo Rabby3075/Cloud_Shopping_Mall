@@ -26,5 +26,10 @@ namespace Cloud_Shopping_Mall.View
         {
             new AdminRegistation().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new EmployeeReg().Show();
+        }
     }
 }
