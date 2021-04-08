@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cloud_Shopping_Mall.Model
 {
-    public class Employee
+    public class Customer
     {
         public string Name { get; set; }
         public int MobileNo { get; set; }
@@ -15,12 +15,11 @@ namespace Cloud_Shopping_Mall.Model
         public int ZipCode { get; set; }
         public string PresentAddress { get; set; }
         public string PermanentAddress { get; set; }
+        public int Balance { get; set; }
         public int Nid { get; set; }
         public int BirthCertificate { get; set; }
         public string Email { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        
-
     }
 }

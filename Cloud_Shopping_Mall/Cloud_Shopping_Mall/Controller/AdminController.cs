@@ -45,5 +45,9 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Admins.DeleteAdmin(email,password);
         }
+        public static Admin GetAdmin(string userName)
+        {
+            return db.Admins.GetAdmin(userName);
+        }
     }
 }

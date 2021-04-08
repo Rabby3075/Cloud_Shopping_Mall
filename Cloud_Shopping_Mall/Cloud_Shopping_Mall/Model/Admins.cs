@@ -88,6 +88,26 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
+        public Admin GetAdmin(string email)
+        {
+            conn.Open();
+            string query = String.Format("Select * FROM Admin WHERE Email='{0}'", email);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            Admin admin = null;
+            while (reader.Read())
+            {
+                admin = new Admin();
+                admin.Name = reader.GetString(reader.GetOrdinal("Name"));
+                admin.PresentAddress = reader.GetString(reader.GetOrdinal("PresentAddress"));
+                admin.MobileNo = reader.GetInt32(reader.GetOrdinal("MobileNo"));
+                admin.Gender = reader.GetString(reader.GetOrdinal("Gender"));
+                admin.Email = reader.GetString(reader.GetOrdinal("Email"));
+                admin.Password = reader.GetString(reader.GetOrdinal("Password"));
+            }
+            conn.Close();
+            return admin;
+        }
 
     }
 }

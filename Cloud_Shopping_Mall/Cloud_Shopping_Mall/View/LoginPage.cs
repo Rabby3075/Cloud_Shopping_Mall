@@ -66,6 +66,30 @@ namespace Cloud_Shopping_Mall.View
                         MessageBox.Show("User Not Valid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                else if (employee.Checked == true)
+                {
+                    dynamic EmployeeResult = EmployeeController.AuthenticEmployee(Email,Email,Password);
+                    if(EmployeeResult != null)
+                    {
+                        new EmployeePortal().Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("User Not Valid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else if (customer.Checked == true)
+                {
+                    dynamic CustomerResult = CustomerController.AuthenticateCustomer(Email, Email, Password);
+                    if(CustomerResult != null)
+                    {
+                        new Customer_Portal().Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("User Not Valid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
         }
 
@@ -83,7 +107,7 @@ namespace Cloud_Shopping_Mall.View
 
         private void forget_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            new ForgetPassword().Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

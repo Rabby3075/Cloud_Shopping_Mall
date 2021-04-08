@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\CustomerController.cs" />
+    <Compile Include="Controller\EmployeeController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,8 +57,11 @@
     </Compile>
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Admins.cs" />
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\Customers.cs" />
     <Compile Include="Model\Database.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Employees.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\AdminPortal.cs">
@@ -71,11 +76,35 @@
     <Compile Include="View\AdminRegistation.Designer.cs">
       <DependentUpon>AdminRegistation.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Customer Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Customer Portal.Designer.cs">
+      <DependentUpon>Customer Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerReg.Designer.cs">
+      <DependentUpon>CustomerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeePortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeePortal.Designer.cs">
+      <DependentUpon>EmployeePortal.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EmployeeReg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\EmployeeReg.Designer.cs">
       <DependentUpon>EmployeeReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="View\HomePage.cs">
       <SubType>Form</SubType>
@@ -108,8 +137,14 @@
     <EmbeddedResource Include="View\AdminRegistation.resx">
       <DependentUpon>AdminRegistation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerReg.resx">
+      <DependentUpon>CustomerReg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeeReg.resx">
       <DependentUpon>EmployeeReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -150,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

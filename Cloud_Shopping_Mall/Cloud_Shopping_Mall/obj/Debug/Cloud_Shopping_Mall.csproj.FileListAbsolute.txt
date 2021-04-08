@@ -12,3 +12,5 @@ H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.AdminRegistation.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.Register.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.EmployeeReg.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.CustomerReg.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ForgetPassword.resources

@@ -1,8 +1,10 @@
 ﻿using Cloud_Shopping_Mall.Controller;
+using Cloud_Shopping_Mall.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,8 @@ namespace Cloud_Shopping_Mall.View
 {
     public partial class AdminRegistation : Form
     {
+
+        
         public AdminRegistation()
         {
             InitializeComponent();
@@ -79,53 +83,65 @@ namespace Cloud_Shopping_Mall.View
                 {
                     genderallert.Visible = false;
                 }
-                 if (mobile.Text.Length != 11)
+                
+                MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else if (mobile.Text.Length != 11)
             {
                 mobileallert.Visible = true;
                 MessageBox.Show("Please enter your 11 digit mobile no", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            if (password.Text.Length < 6)
+            else if (password.Text.Length < 6)
             {
                 passwordallert.Visible = true;
                 MessageBox.Show("Please enter atleast 6 digit password", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            if (email.Text.Contains(".com") == false)
+            else if (email.Text.Contains(".com") == false)
             {
                 emailallert.Visible = true;
                 MessageBox.Show("Please enter your  correct email address", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if ((mobile.Text.Substring(0, 2) != "01"))
+            else if ((mobile.Text.Substring(0, 2) != "01"))
             {
                 mobileallert.Visible = true;
                 MessageBox.Show("Wrong mobile operator", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-                MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            }
-            
 
             else
             {
-                var admin = new
-                {
-                    Name = name.Text.Trim(),
-                    PresentAddress = address.Text.Trim(),
-                    MobileNo =Convert.ToInt32(mobile.Text),
-                    Gender = gender.SelectedItem.ToString().Trim(),
+                
+               
 
-                    Email = email.Text.Trim(),
-                    Password = password.Text.Trim()
+                    var admin = new
+                    {
+                        Name = name.Text.Trim(),
+                        PresentAddress = address.Text.Trim(),
+                        MobileNo = Convert.ToInt32(mobile.Text),
+                        Gender = gender.SelectedItem.ToString().Trim(),
 
-                };
-                var result = AdminController.AddAdmin(admin);
-                if (result)
-                {
-                    confirm.Visible = true;
-                    new LoginPage().Show();
-                }
+                        Email = email.Text.Trim(),
+                        Password = password.Text.Trim()
+
+                    };
+                    var result = AdminController.AddAdmin(admin);
+                    if (result)
+                    {
+                        confirm.Visible = true;
+                        new LoginPage().Show();
+                    }
+
+                
+                
+               
+                   
+                
+                
+                
                
             }
            

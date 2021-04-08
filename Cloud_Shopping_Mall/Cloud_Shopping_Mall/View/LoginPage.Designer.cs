@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(159, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(457, 323);
+            this.panel1.Size = new System.Drawing.Size(555, 336);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -77,7 +77,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(103, 283);
+            this.label4.Location = new System.Drawing.Point(158, 283);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 17);
             this.label4.TabIndex = 18;
@@ -88,7 +88,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(260, 283);
+            this.linkLabel1.Location = new System.Drawing.Point(315, 283);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(94, 17);
             this.linkLabel1.TabIndex = 17;
@@ -100,7 +100,7 @@
             // 
             this.passwordallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
             this.passwordallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.passwordallert.Location = new System.Drawing.Point(370, 165);
+            this.passwordallert.Location = new System.Drawing.Point(452, 167);
             this.passwordallert.Name = "passwordallert";
             this.passwordallert.Size = new System.Drawing.Size(32, 18);
             this.passwordallert.TabIndex = 16;
@@ -111,7 +111,7 @@
             // 
             this.emailallert.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.cancel;
             this.emailallert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.emailallert.Location = new System.Drawing.Point(370, 123);
+            this.emailallert.Location = new System.Drawing.Point(452, 123);
             this.emailallert.Name = "emailallert";
             this.emailallert.Size = new System.Drawing.Size(32, 18);
             this.emailallert.TabIndex = 15;
@@ -123,7 +123,7 @@
             this.forget.AutoSize = true;
             this.forget.BackColor = System.Drawing.Color.Transparent;
             this.forget.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.forget.Location = new System.Drawing.Point(322, 207);
+            this.forget.Location = new System.Drawing.Point(408, 203);
             this.forget.Name = "forget";
             this.forget.Size = new System.Drawing.Size(114, 17);
             this.forget.TabIndex = 14;
@@ -138,7 +138,7 @@
             this.customer.Cursor = System.Windows.Forms.Cursors.Default;
             this.customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customer.Location = new System.Drawing.Point(325, 74);
+            this.customer.Location = new System.Drawing.Point(392, 74);
             this.customer.Name = "customer";
             this.customer.Size = new System.Drawing.Size(111, 24);
             this.customer.TabIndex = 13;
@@ -152,7 +152,7 @@
             this.employee.BackColor = System.Drawing.Color.Transparent;
             this.employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.employee.Location = new System.Drawing.Point(169, 74);
+            this.employee.Location = new System.Drawing.Point(215, 74);
             this.employee.Name = "employee";
             this.employee.Size = new System.Drawing.Size(111, 24);
             this.employee.TabIndex = 12;
@@ -166,7 +166,7 @@
             this.admin.BackColor = System.Drawing.Color.Transparent;
             this.admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.admin.Location = new System.Drawing.Point(39, 74);
+            this.admin.Location = new System.Drawing.Point(72, 74);
             this.admin.Name = "admin";
             this.admin.Size = new System.Drawing.Size(82, 24);
             this.admin.TabIndex = 11;
@@ -179,7 +179,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(158, 240);
+            this.button1.Location = new System.Drawing.Point(206, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 31);
             this.button1.TabIndex = 9;
@@ -192,7 +192,7 @@
             this.passcheck.AutoSize = true;
             this.passcheck.BackColor = System.Drawing.Color.Transparent;
             this.passcheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.passcheck.Location = new System.Drawing.Point(25, 203);
+            this.passcheck.Location = new System.Drawing.Point(25, 202);
             this.passcheck.Name = "passcheck";
             this.passcheck.Size = new System.Drawing.Size(129, 21);
             this.passcheck.TabIndex = 8;
@@ -202,7 +202,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(133, 165);
+            this.password.Location = new System.Drawing.Point(215, 165);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(269, 22);
             this.password.TabIndex = 7;
@@ -210,7 +210,7 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(133, 123);
+            this.email.Location = new System.Drawing.Point(215, 123);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(269, 22);
             this.email.TabIndex = 6;
@@ -235,9 +235,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(21, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 20);
+            this.label2.Size = new System.Drawing.Size(173, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Email";
+            this.label2.Text = "Email or UserName";
             // 
             // label1
             // 
@@ -245,7 +245,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(163, 10);
+            this.label1.Location = new System.Drawing.Point(229, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 32);
             this.label1.TabIndex = 0;

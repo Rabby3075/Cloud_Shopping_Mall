@@ -31,5 +31,10 @@ namespace Cloud_Shopping_Mall.View
         {
             new EmployeeReg().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new CustomerReg().Show();
+        }
     }
 }
