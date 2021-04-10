@@ -36,6 +36,7 @@ namespace Cloud_Shopping_Mall.View
         private void button1_Click(object sender, EventArgs e)
         {
             string User = user.Text;
+           
             if (string.IsNullOrEmpty(User))
             {
                 MessageBox.Show("Please enter your Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -63,7 +64,7 @@ namespace Cloud_Shopping_Mall.View
                 }
                 else if (employee.Checked == true)
                 {
-                    dynamic EmployeeResult = EmployeeController.ForgetEmployee(User,User);
+                    dynamic EmployeeResult = EmployeeController.ForgetEmployee(User);
                     if (EmployeeResult != null)
                     {
                         password.Visible = true;
@@ -78,7 +79,7 @@ namespace Cloud_Shopping_Mall.View
                 }
                 if (customer.Checked == true)
                 {
-                    dynamic customerResult = CustomerController.ForgetCustomer(User,User);
+                    dynamic customerResult = CustomerController.ForgetCustomer(User);
                     if (customerResult != null)
                     {
                         password.Visible = true;

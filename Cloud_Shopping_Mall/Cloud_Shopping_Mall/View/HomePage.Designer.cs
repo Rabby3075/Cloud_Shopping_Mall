@@ -55,7 +55,7 @@
             this.lgn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgn.Location = new System.Drawing.Point(12, 120);
             this.lgn.Name = "lgn";
-            this.lgn.Size = new System.Drawing.Size(112, 53);
+            this.lgn.Size = new System.Drawing.Size(112, 59);
             this.lgn.TabIndex = 2;
             this.lgn.Text = "Login";
             this.lgn.UseVisualStyleBackColor = false;

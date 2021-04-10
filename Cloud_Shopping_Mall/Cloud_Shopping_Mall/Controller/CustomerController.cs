@@ -37,9 +37,9 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Customers.GetCustomer(userName,password);
         }
-        public static Customer ForgetCustomer(string userName, string email)
+        public static Customer ForgetCustomer(string userName)
         {
-            return db.Customers.ForgetCustomer(userName, email);
+            return db.Customers.ForgetCustomer(userName);
         }
         public static bool UpdateCustomer(dynamic customer)
         {

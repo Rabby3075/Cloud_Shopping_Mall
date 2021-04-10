@@ -36,9 +36,9 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Employees.GetEmployee(userName,password);
         }
-        public static Employee ForgetEmployee(string userName, string email)
+        public static Employee ForgetEmployee(string userName)
         {
-            return db.Employees.ForgetEmployee(userName, email);
+            return db.Employees.ForgetEmployee(userName);
         }
         public static bool UpdateEmployee(dynamic employee)
         {

@@ -126,10 +126,10 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
-        public Employee ForgetEmployee(string userName, string email)
+        public Employee ForgetEmployee(string userName)
         {
             conn.Open();
-            string query = String.Format("Select * FROM Employee WHERE UserName='{0}' OR Email='{1}'", userName, email);
+            string query = String.Format("Select * FROM Employee WHERE UserName='{0}' ", userName);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             Employee employee = null;

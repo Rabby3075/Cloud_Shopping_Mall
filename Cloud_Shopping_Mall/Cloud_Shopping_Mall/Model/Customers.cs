@@ -130,10 +130,10 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
-        public Customer ForgetCustomer(string userName, string email)
+        public Customer ForgetCustomer(string userName)
         {
             conn.Open();
-            string query = String.Format("Select * FROM Customer WHERE UserName='{0}' OR Email='{1}'", userName, email);
+            string query = String.Format("Select * FROM Customer WHERE UserName='{0}'", userName);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             Customer customer = null;

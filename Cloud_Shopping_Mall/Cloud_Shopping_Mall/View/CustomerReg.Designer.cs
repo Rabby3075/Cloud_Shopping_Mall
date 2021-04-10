@@ -85,10 +85,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.balanceerror = new System.Windows.Forms.PictureBox();
             this.balance = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gendererror)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termerror)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.confirmerror)).BeginInit();
@@ -115,13 +115,14 @@
             this.reject.BackColor = System.Drawing.Color.Red;
             this.reject.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reject.ForeColor = System.Drawing.Color.Black;
-            this.reject.Location = new System.Drawing.Point(248, 788);
+            this.reject.Location = new System.Drawing.Point(217, 788);
             this.reject.Name = "reject";
             this.reject.Padding = new System.Windows.Forms.Padding(4);
             this.reject.Size = new System.Drawing.Size(532, 46);
             this.reject.TabIndex = 59;
             this.reject.Text = "Do not give char instead of number";
             this.reject.Visible = false;
+            this.reject.Click += new System.EventHandler(this.reject_Click);
             // 
             // mobilemsg
             // 
@@ -194,6 +195,7 @@
             this.linkLabel1.TabIndex = 53;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Login here";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label18
             // 
@@ -790,17 +792,16 @@
             this.panel1.Size = new System.Drawing.Size(990, 857);
             this.panel1.TabIndex = 1;
             // 
-            // label17
+            // label19
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Purple;
-            this.label17.Location = new System.Drawing.Point(437, 274);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 24);
-            this.label17.TabIndex = 60;
-            this.label17.Text = "Balance";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(677, 301);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(141, 17);
+            this.label19.TabIndex = 63;
+            this.label19.Text = "Add Atleast 500 tk";
             // 
             // balanceerror
             // 
@@ -823,16 +824,17 @@
             this.balance.Tag = "";
             this.balance.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label19
+            // label17
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(677, 301);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(141, 17);
-            this.label19.TabIndex = 63;
-            this.label19.Text = "Add Atleast 500 tk";
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Purple;
+            this.label17.Location = new System.Drawing.Point(437, 274);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 24);
+            this.label17.TabIndex = 60;
+            this.label17.Text = "Balance";
             // 
             // CustomerReg
             // 

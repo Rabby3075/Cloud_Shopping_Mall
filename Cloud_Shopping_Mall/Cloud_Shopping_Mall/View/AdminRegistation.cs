@@ -114,9 +114,8 @@ namespace Cloud_Shopping_Mall.View
 
             else
             {
-                
-               
-
+                 try
+                {
                     var admin = new
                     {
                         Name = name.Text.Trim(),
@@ -134,6 +133,14 @@ namespace Cloud_Shopping_Mall.View
                         confirm.Visible = true;
                         new LoginPage().Show();
                     }
+                }
+                catch (FormatException)
+                {
+                    mobileallert.Visible = true;
+                    MessageBox.Show("Do not insert character in phone number", "Invalid Mobile No", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                 
 
                 
                 

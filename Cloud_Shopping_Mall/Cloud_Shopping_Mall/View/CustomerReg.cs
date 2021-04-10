@@ -161,7 +161,7 @@ namespace Cloud_Shopping_Mall.View
 
                 MessageBox.Show("Please enter your all Information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (confirmReg.Text.Trim().Equals(password.Text.Trim()))
+            else if (!confirmpass.Text.Trim().Equals(password.Text.Trim()))
             {
                 confirmerror.Visible = true;
                 passerror.Visible = true;
@@ -268,6 +268,16 @@ namespace Cloud_Shopping_Mall.View
             {
                 passerror.Visible = false;
             }
+        }
+
+        private void reject_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new LoginPage().Show();
         }
     }
 }
