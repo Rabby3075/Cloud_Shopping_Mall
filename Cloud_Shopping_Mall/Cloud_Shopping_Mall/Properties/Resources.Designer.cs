@@ -73,6 +73,16 @@ namespace Cloud_Shopping_Mall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blur_shopping_mall_1203_8327 {
+            get {
+                object obj = ResourceManager.GetObject("blur-shopping-mall_1203-8327", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -123,9 +133,39 @@ namespace Cloud_Shopping_Mall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginBackground {
+            get {
+                object obj = ResourceManager.GetObject("LoginBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap management {
+            get {
+                object obj = ResourceManager.GetObject("management", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap purple_background_registration {
             get {
                 object obj = ResourceManager.GetObject("purple-background-registration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tech_background_image_2 {
+            get {
+                object obj = ResourceManager.GetObject("tech-background-image-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

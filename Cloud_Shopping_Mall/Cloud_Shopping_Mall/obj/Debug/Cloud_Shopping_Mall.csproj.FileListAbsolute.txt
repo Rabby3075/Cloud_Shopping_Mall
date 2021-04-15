@@ -14,3 +14,13 @@ H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.EmployeeReg.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.CustomerReg.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ForgetPassword.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.AdminPortal.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.EmployeePortal.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.EmployeeList.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.EmployeeManagement.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.removeEmployee.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ShopManagement.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ShopReg.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.Remove_Shop.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ShopList.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.updateShop.resources

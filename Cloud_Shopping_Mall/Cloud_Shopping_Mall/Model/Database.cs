@@ -13,6 +13,7 @@ namespace Cloud_Shopping_Mall.Model
         public Admins Admins { get; set; }
         public Employees Employees { get; set; }
         public Customers Customers { get; set; }
+        public Shops Shops { get; set; }
         public Database()
         {
             string conn = @"Server=RABBY-PC\SQLEXPRESS;Database=CloudShop;User Id=sa;Password=1234;";
@@ -22,6 +23,7 @@ namespace Cloud_Shopping_Mall.Model
             Admins = new Admins(connection);
             Employees = new Employees(connection);
             Customers = new Customers(connection);
+            Shops = new Shops(connection);
 
         }
     }

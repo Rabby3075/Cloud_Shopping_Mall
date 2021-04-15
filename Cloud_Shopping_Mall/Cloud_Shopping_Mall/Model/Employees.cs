@@ -52,11 +52,11 @@ namespace Cloud_Shopping_Mall.Model
             conn.Close();
             return employee;
         }
-        public ArrayList GetAllEmployee()
+        public ArrayList GetAllEmployee(string user)
         {
             ArrayList employees = new ArrayList();
             conn.Open();
-            string query = "Select * FROM Employee";
+            string query = String.Format("SELECT * FROM Employee WHERE UserName='{0}'", user);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -72,7 +72,7 @@ namespace Cloud_Shopping_Mall.Model
                 //employee.Nid = reader.GetInt32(reader.GetOrdinal("Nid"));
                // employee.BirthCertificate = reader.GetInt32(reader.GetOrdinal("BirthCertificate"));
                 employee.Email = reader.GetString(reader.GetOrdinal("Email"));
-                employee.UserName = reader.GetString(reader.GetOrdinal("UserName"));
+                //employee.UserName = reader.GetString(reader.GetOrdinal("UserName"));
                 //employee.Password = reader.GetString(reader.GetOrdinal("Password"));
                 employees.Add(employee);
             }
@@ -116,10 +116,10 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
-        public bool DeleteEmployee(string userName,string password)
+        public bool DeleteEmployee(string userName)
         {
             conn.Open();
-            string query = String.Format("DELETE FROM Employee WHERE (UserName='{0}' AND Password='{1}'", userName,password);
+            string query = String.Format("DELETE FROM Employee WHERE UserName='{0}'", userName);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();

@@ -15,6 +15,12 @@ namespace Cloud_Shopping_Mall.View
         public EmployeePortal()
         {
             InitializeComponent();
+            
+        }
+
+        private void EmployeePortal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

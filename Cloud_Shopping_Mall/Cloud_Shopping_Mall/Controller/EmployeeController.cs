@@ -54,13 +54,13 @@ namespace Cloud_Shopping_Mall.Controller
             e.Password = employee.Password;
             return db.Employees.UpdateEmployee(e);
         }
-        public static bool DeleteEmployee(string userName,string password)
+        public static bool DeleteEmployee(string userName)
         {
-            return db.Employees.DeleteEmployee(userName,password);
+            return db.Employees.DeleteEmployee(userName);
         }
-        public static ArrayList getAllEmployee()
+        public static ArrayList getAllEmployee(string user)
         {
-            return db.Employees.GetAllEmployee();
+            return db.Employees.GetAllEmployee(user);
         }
     }
 }

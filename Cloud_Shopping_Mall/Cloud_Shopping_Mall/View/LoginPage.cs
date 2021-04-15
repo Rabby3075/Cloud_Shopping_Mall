@@ -59,7 +59,8 @@ namespace Cloud_Shopping_Mall.View
                     dynamic AdminResult = AdminController.AuthenticateAdmin(Email, Password);
                     if (AdminResult != null)
                     {
-                        new AdminPortal().Show();
+                        string welcome = AdminResult.Name;
+                        new AdminPortal(welcome).Show();
                     }
                     else
                     {
