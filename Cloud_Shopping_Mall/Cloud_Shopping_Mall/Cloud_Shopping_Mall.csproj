@@ -81,6 +81,12 @@
     <Compile Include="View\AdminRegistation.Designer.cs">
       <DependentUpon>AdminRegistation.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AllAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AllAdmin.Designer.cs">
+      <DependentUpon>AllAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Customer Portal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
     </Compile>
     <Compile Include="View\CustomerReg.Designer.cs">
       <DependentUpon>CustomerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeleteAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DeleteAdmin.Designer.cs">
+      <DependentUpon>DeleteAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="View\EmployeeList.cs">
       <SubType>Form</SubType>
@@ -171,6 +183,12 @@
     <Compile Include="View\ShopReg.Designer.cs">
       <DependentUpon>ShopReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\updateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\updateAdmin.Designer.cs">
+      <DependentUpon>updateAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\updateShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,8 +211,14 @@
     <EmbeddedResource Include="View\AdminRegistation.resx">
       <DependentUpon>AdminRegistation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\AllAdmin.resx">
+      <DependentUpon>AllAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\CustomerReg.resx">
       <DependentUpon>CustomerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DeleteAdmin.resx">
+      <DependentUpon>DeleteAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeeList.resx">
       <DependentUpon>EmployeeList.cs</DependentUpon>
@@ -234,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ShopReg.resx">
       <DependentUpon>ShopReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\updateAdmin.resx">
+      <DependentUpon>updateAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\updateShop.resx">
       <DependentUpon>updateShop.cs</DependentUpon>

@@ -36,7 +36,7 @@ namespace Cloud_Shopping_Mall.Controller
             a.Name = admin.Name;
             a.PresentAddress = admin.PresentAddress;
             a.MobileNo = admin.MobileNo;
-            a.Gender = admin.Gender;
+           // a.Gender = admin.Gender;
             a.Email = admin.Email;
             a.Password = admin.Password;
             return db.Admins.UpdateAdmin(a);
@@ -48,6 +48,10 @@ namespace Cloud_Shopping_Mall.Controller
         public static Admin GetAdmin(string userName)
         {
             return db.Admins.GetAdmin(userName);
+        }
+        public static Admin GetAdmin1(string userName,string password)
+        {
+            return db.Admins.GetAdmin1(userName,password);
         }
     }
 }

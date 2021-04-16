@@ -18,13 +18,21 @@ namespace Cloud_Shopping_Mall.View
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void updateShop_Load(object sender, EventArgs e)
         {
 
-          
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             if (string.IsNullOrEmpty(id.Text))
             {
-                MessageBox.Show("Please enter information", "Restaurant Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter shop Id", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -38,30 +46,25 @@ namespace Cloud_Shopping_Mall.View
                         name.Text = String.Format(result.Name);
                         location.Text = String.Format(result.Location);
                     }
-                    else
-                    {
-                        MessageBox.Show("No shop found", "Food Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
                 }
                 catch (FormatException)
                 {
-                    MessageBox.Show("Please use numeric number in Shop id", "Restaurant Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter shop Id in correct formate", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-               
             }
         }
 
-        private void edit(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             name.Enabled = true;
             location.Enabled = true;
         }
 
-        private void update(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(id.Text.Trim()) || string.IsNullOrEmpty(name.Text.Trim()) || string.IsNullOrEmpty(location.Text.Trim()))
             {
-                MessageBox.Show("Please enter information", "Restaurant Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter your shop information", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -71,18 +74,48 @@ namespace Cloud_Shopping_Mall.View
                     Name = name.Text.Trim(),
                     Location = location.Text.Trim()
                 };
-                var result = ShopController.UpdateRestaurant(shop);
+                var result = ShopController.UpdateShop(shop);
                 if (result)
                 {
-                    MessageBox.Show("Shop Updated", "Shop Registration", MessageBoxButtons.OK, MessageBoxIcon.None);
-
+                    MessageBox.Show("Information Updated", "Update Information", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
-                else
-                {
-                    MessageBox.Show("Shop cant added", "shop Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
+                
             }
+        }
+
+        private void id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void location_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

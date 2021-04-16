@@ -23,13 +23,13 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Shops.GetShop(id);
         }
-        public static bool UpdateRestaurant(dynamic shop)
+        public static bool UpdateShop(dynamic shop)
         {
             Shop s = new Shop();
             s.Id = shop.Id;
             s.Name = shop.Name;
             s.Location = shop.Location;
-            return db.Shops.UpdateRestaurant(s);
+            return db.Shops.UpdateShop(s);
         }
         public static bool DeleteShop(int id)
         {

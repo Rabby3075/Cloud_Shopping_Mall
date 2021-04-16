@@ -35,7 +35,7 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
-        public bool UpdateRestaurant(Shop shop)
+        public bool UpdateShop(Shop shop)
         {
             conn.Open();
             string query = String.Format("UPDATE Shop SET Name='{0}',Location='{1}' WHERE Id='{2}'", shop.Name, shop.Location, shop.Id);
