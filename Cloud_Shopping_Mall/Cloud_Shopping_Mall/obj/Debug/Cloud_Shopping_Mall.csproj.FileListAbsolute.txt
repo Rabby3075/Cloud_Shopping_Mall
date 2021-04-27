@@ -36,3 +36,4 @@ H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ProductList.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.CustomerList.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.RemoveCustomer.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.order.resources

@@ -34,6 +34,15 @@ namespace Cloud_Shopping_Mall.Controller
             p.Quantity = product.Quantity;
             return db.Products.UpdateProduct(p);
         }
+        public static bool UpdateProduct1(dynamic product)
+        {
+            Product p = new Product();
+            p.Id = product.Id;
+            // p.Name = product.Name;
+           // p.Price = product.Price;
+            p.Quantity = product.Quantity;
+            return db.Products.UpdateProduct1(p);
+        }
         public static bool DeleteProduct(int id)
         {
             return db.Products.DeleteProduct(id);

@@ -64,5 +64,11 @@ namespace Cloud_Shopping_Mall.View
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Customer_Portal().Show();
+        }
     }
 }

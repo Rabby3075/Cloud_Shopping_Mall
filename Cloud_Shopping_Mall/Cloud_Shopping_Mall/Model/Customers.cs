@@ -157,6 +157,16 @@ namespace Cloud_Shopping_Mall.Model
             conn.Close();
             return customer;
         }
+        public bool UpdateCustomer1(Customer customer)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE Customer SET Balance='{0}' WHERE UserName='{1}'", customer.Balance,customer.UserName);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
 
 
     }

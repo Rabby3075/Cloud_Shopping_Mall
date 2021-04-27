@@ -141,5 +141,22 @@ namespace Cloud_Shopping_Mall.Model
             conn.Close();
             return product;
         }
+        public bool UpdateProduct1(Product product)
+        {
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            string query = String.Format("UPDATE Product SET Quantity='{0}' WHERE Id='{1}'", product.Quantity,product.Id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
     }
 }

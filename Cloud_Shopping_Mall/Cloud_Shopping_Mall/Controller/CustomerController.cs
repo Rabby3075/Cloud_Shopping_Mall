@@ -67,5 +67,23 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Customers.GetAllCustomer();
         }
+        public static bool UpdateCustomer1(dynamic customer)
+        {
+            Customer e = new Customer();
+          //  e.Name = customer.Name;
+            //e.MobileNo = customer.MobileNo;
+           // e.Gender = customer.Gender;
+           // e.Division = customer.Division;
+            //e.ZipCode = customer.ZipCode;
+           // e.PresentAddress = customer.PresentAddress;
+           // e.PermanentAddress = customer.PermanentAddress;
+            e.Balance = customer.Balance;
+           // e.Nid = customer.Nid;
+           // e.BirthCertificate = customer.BirthCertificate;
+           // e.Email = customer.Email;
+            e.UserName = customer.UserName;
+           // e.Password = customer.Password;
+            return db.Customers.UpdateCustomer1(e);
+        }
     }
 }

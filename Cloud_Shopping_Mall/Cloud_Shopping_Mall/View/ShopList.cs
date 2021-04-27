@@ -33,7 +33,7 @@ namespace Cloud_Shopping_Mall.View
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ShopManagement().Show();
+            new Customer_Portal().Show();
         }
     }
 }
