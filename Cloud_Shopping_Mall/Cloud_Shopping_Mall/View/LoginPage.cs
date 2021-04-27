@@ -17,6 +17,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
@@ -25,7 +31,7 @@ namespace Cloud_Shopping_Mall.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string Email = email.Text.Trim();
+              string Email = email.Text.Trim();
             string Password = password.Text.Trim();
             if (admin.Checked == false && employee.Checked == false && customer.Checked == false)
             {
@@ -59,8 +65,9 @@ namespace Cloud_Shopping_Mall.View
                     dynamic AdminResult = AdminController.AuthenticateAdmin(Email, Password);
                     if (AdminResult != null)
                     {
-                        string welcome = AdminResult.Name;
-                        new AdminPortal(welcome).Show();
+                        this.Hide();
+                       
+                        new AdminPortal().Show();
                     }
                     else
                     {
@@ -72,6 +79,7 @@ namespace Cloud_Shopping_Mall.View
                     dynamic EmployeeResult = EmployeeController.AuthenticEmployee(Email,Email,Password);
                     if(EmployeeResult != null)
                     {
+                        this.Hide();
                         new EmployeePortal().Show();
                     }
                     else
@@ -84,6 +92,7 @@ namespace Cloud_Shopping_Mall.View
                     dynamic CustomerResult = CustomerController.AuthenticateCustomer(Email, Email, Password);
                     if(CustomerResult != null)
                     {
+                        this.Hide();
                         new Customer_Portal().Show();
                     }
                     else
@@ -108,11 +117,13 @@ namespace Cloud_Shopping_Mall.View
 
         private void forget_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             new ForgetPassword().Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             new Register().Show();
         }
     }

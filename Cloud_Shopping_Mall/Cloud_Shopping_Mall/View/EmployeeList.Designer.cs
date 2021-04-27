@@ -55,6 +55,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -98,6 +99,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "EmployeeList";
             this.Text = "EmployeeList";
+            this.Load += new System.EventHandler(this.EmployeeList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

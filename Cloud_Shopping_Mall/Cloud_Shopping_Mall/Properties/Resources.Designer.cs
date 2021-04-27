@@ -63,6 +63,16 @@ namespace Cloud_Shopping_Mall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16668 {
+            get {
+                object obj = ResourceManager.GetObject("16668", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _29nhJr {
             get {
                 object obj = ResourceManager.GetObject("29nhJr", resourceCulture);
@@ -86,6 +96,26 @@ namespace Cloud_Shopping_Mall.Properties {
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_119127780_stock_photo_blurred_abstract_background_of_people {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_119127780-stock-photo-blurred-abstract-background-of-people", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap discount_background_sale_vector_9280811 {
+            get {
+                object obj = ResourceManager.GetObject("discount-background-sale-vector-9280811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,16 @@ namespace Cloud_Shopping_Mall.Properties {
         internal static System.Drawing.Bitmap purple_background_registration {
             get {
                 object obj = ResourceManager.GetObject("purple-background-registration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rm27_ning_48_wood {
+            get {
+                object obj = ResourceManager.GetObject("rm27-ning-48-wood", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

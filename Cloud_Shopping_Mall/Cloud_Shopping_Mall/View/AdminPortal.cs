@@ -12,14 +12,17 @@ namespace Cloud_Shopping_Mall.View
 {
     public partial class AdminPortal : Form
     {
-        public AdminPortal() {
-            InitializeComponent();
+       
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
         }
-        public AdminPortal(string name)
+        public AdminPortal()
         {
             InitializeComponent();
-            string output = String.Format("Welcome {0}",name);
-            welcomeName.Text = output;
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,27 +42,38 @@ namespace Cloud_Shopping_Mall.View
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new EmployeeManagement().Show();
         }
 
         private void ShopManagement(object sender, EventArgs e)
         {
+            
             new ShopManagement().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+           
             new updateAdmin().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+           
             new DeleteAdmin().Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
             new AllAdmin().Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LoginPage().Show();
         }
     }
 }

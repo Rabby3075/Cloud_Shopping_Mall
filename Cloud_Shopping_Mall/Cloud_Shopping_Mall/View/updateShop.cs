@@ -17,7 +17,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void updateShop_Load(object sender, EventArgs e)
         {
 
@@ -116,6 +121,12 @@ namespace Cloud_Shopping_Mall.View
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ShopManagement().Show();
         }
     }
 }

@@ -39,5 +39,6 @@ namespace Cloud_Shopping_Mall.Controller
         {
             return db.Shops.GetAllShop();
         } 
+
     }
 }

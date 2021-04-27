@@ -22,7 +22,12 @@ namespace Cloud_Shopping_Mall.View
         {
 
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void removeEmployee_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -42,6 +47,12 @@ namespace Cloud_Shopping_Mall.View
             {
                 MessageBox.Show("Employee not found", "Employee Remove", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new EmployeeManagement().Show();
         }
     }
 }

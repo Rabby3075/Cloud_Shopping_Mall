@@ -31,7 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -70,15 +70,16 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // button3
             // 
-            this.button5.BackColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(715, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button3.Location = new System.Drawing.Point(713, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 29);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // EmployeeManagement
             // 
@@ -86,12 +87,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.management;
             this.ClientSize = new System.Drawing.Size(810, 444);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "EmployeeManagement";
             this.Text = "EmployeeManagement";
+            this.Load += new System.EventHandler(this.EmployeeManagement_Load);
             this.ResumeLayout(false);
 
         }
@@ -101,6 +103,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
     }
 }

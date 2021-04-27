@@ -16,8 +16,16 @@ namespace Cloud_Shopping_Mall.View
         public ShopReg()
         {
             InitializeComponent();
-        }
+            var shop = ShopController.GetAllShop();
+            dataGridView1.DataSource = shop;
 
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void ShopReg_Load(object sender, EventArgs e)
         {
 
@@ -75,8 +83,12 @@ namespace Cloud_Shopping_Mall.View
                     if (result)
                     {
                         MessageBox.Show("Shop Added", "Restaurant Registration", MessageBoxButtons.OK, MessageBoxIcon.None);
-                       // new AdminPortal().Show();
-                        
+                        shopId.Text = null;
+                        shopName.Text = null;
+                        outlet.Text = null;
+                        var shop1 = ShopController.GetAllShop();
+                        dataGridView1.DataSource = shop1;
+
                     }
                 }
                 catch (FormatException)
@@ -88,6 +100,12 @@ namespace Cloud_Shopping_Mall.View
             }
                 
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ShopManagement().Show();
         }
     }
 }

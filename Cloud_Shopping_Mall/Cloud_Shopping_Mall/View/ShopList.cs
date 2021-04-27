@@ -19,10 +19,21 @@ namespace Cloud_Shopping_Mall.View
             var result = ShopController.GetAllShop();
             dataGridView1.DataSource = result; 
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void ShopList_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ShopManagement().Show();
         }
     }
 }

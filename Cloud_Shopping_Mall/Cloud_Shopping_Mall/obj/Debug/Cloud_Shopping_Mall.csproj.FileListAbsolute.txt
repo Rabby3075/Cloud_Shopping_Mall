@@ -27,3 +27,12 @@ H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.updateAdmin.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.DeleteAdmin.resources
 H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.AllAdmin.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.CustomerManagement.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ProductManagement.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.AddProduct.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.Customer_Portal.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.RemoveProduct.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.UpdateProduct.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.ProductList.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.CustomerList.resources
+H:\C# Practice\Cloud Shopping Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\Cloud_Shopping_Mall\obj\Debug\Cloud_Shopping_Mall.View.RemoveCustomer.resources

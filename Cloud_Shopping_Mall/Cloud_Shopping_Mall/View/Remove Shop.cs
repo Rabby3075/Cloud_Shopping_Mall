@@ -16,8 +16,15 @@ namespace Cloud_Shopping_Mall.View
         public Remove_Shop()
         {
             InitializeComponent();
+            var shop = ShopController.GetAllShop();
+            dataGridView1.DataSource = shop;
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -43,7 +50,10 @@ namespace Cloud_Shopping_Mall.View
                     if (result)
                     {
                         MessageBox.Show("Shop Remove", "Restaurant Registration", MessageBoxButtons.OK, MessageBoxIcon.None);
-                      //  new AdminPortal().Show();
+                        id.Text = null;
+                        var shop = ShopController.GetAllShop();
+                        dataGridView1.DataSource = shop;
+                   
                     }
                     else
                     {
@@ -61,6 +71,12 @@ namespace Cloud_Shopping_Mall.View
         private void Remove_Shop_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ShopManagement().Show();
         }
     }
 }

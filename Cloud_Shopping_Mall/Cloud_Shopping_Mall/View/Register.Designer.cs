@@ -33,19 +33,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.linkLabel1);
+            this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(139, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(494, 307);
+            this.panel1.Size = new System.Drawing.Size(494, 326);
             this.panel1.TabIndex = 0;
             // 
             // button3
@@ -99,6 +103,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Registration";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
+            this.linkLabel1.Location = new System.Drawing.Point(285, 281);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(86, 17);
+            this.linkLabel1.TabIndex = 55;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login here";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(113, 281);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(166, 17);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Already have an Accout?";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,5 +154,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label18;
     }
 }

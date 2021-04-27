@@ -19,7 +19,12 @@ namespace Cloud_Shopping_Mall.View
             var result = AdminController.GetAllAdmin();
             dataGridView1.DataSource = result;
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -28,6 +33,12 @@ namespace Cloud_Shopping_Mall.View
         private void AllAdmin_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AdminPortal().Show();
         }
     }
 }

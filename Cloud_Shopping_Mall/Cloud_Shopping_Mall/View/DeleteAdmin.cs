@@ -17,7 +17,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string Email = email.Text.Trim();
@@ -32,6 +37,7 @@ namespace Cloud_Shopping_Mall.View
                 if (result)
                 {
                     MessageBox.Show("Account Delete", "Invalid Information", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    this.Hide();
                     new LoginPage().Show();
                 }
                 else
@@ -40,6 +46,17 @@ namespace Cloud_Shopping_Mall.View
                 }
             }
 
+        }
+
+        private void DeleteAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AdminPortal().Show();
         }
     }
 }

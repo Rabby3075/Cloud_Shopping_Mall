@@ -17,7 +17,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string User = userName.Text.Trim();
@@ -31,6 +36,17 @@ namespace Cloud_Shopping_Mall.View
             {
 
             }
+        }
+
+        private void EmployeeList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new EmployeeManagement().Show();
         }
     }
 }

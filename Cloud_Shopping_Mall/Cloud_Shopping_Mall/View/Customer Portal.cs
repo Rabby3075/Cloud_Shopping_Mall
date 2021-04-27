@@ -16,5 +16,15 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
+        private void Customer_Portal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

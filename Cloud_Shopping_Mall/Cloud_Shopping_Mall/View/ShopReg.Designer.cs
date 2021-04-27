@@ -40,9 +40,11 @@
             this.idallert = new System.Windows.Forms.PictureBox();
             this.nameallert = new System.Windows.Forms.PictureBox();
             this.locallert = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.idallert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameallert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locallert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +54,7 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(320, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 41);
+            this.label1.Size = new System.Drawing.Size(204, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Shopping Mall";
             // 
@@ -130,6 +132,7 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // idallert
             // 
@@ -164,12 +167,26 @@
             this.locallert.TabStop = false;
             this.locallert.Visible = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(204, 430);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(414, 307);
+            this.dataGridView1.TabIndex = 18;
+            // 
             // ShopReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(907, 749);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.locallert);
             this.Controls.Add(this.nameallert);
             this.Controls.Add(this.idallert);
@@ -188,6 +205,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.idallert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameallert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locallert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +225,6 @@
         private System.Windows.Forms.PictureBox idallert;
         private System.Windows.Forms.PictureBox nameallert;
         private System.Windows.Forms.PictureBox locallert;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

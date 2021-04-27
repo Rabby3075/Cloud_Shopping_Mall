@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.confirm = new System.Windows.Forms.Label();
             this.genderallert = new System.Windows.Forms.PictureBox();
             this.passwordallert = new System.Windows.Forms.PictureBox();
             this.emailallert = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.confirm = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.genderallert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordallert)).BeginInit();
@@ -62,7 +64,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.confirm);
+            this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.genderallert);
             this.panel1.Controls.Add(this.passwordallert);
             this.panel1.Controls.Add(this.emailallert);
@@ -85,8 +89,22 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(118, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(544, 455);
+            this.panel1.Size = new System.Drawing.Size(544, 493);
             this.panel1.TabIndex = 0;
+            // 
+            // confirm
+            // 
+            this.confirm.AutoSize = true;
+            this.confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm.ForeColor = System.Drawing.Color.Black;
+            this.confirm.Location = new System.Drawing.Point(61, 415);
+            this.confirm.Name = "confirm";
+            this.confirm.Padding = new System.Windows.Forms.Padding(4);
+            this.confirm.Size = new System.Drawing.Size(387, 46);
+            this.confirm.TabIndex = 20;
+            this.confirm.Text = "Admin Registration Done";
+            this.confirm.Visible = false;
             // 
             // genderallert
             // 
@@ -183,7 +201,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.OliveDrab;
-            this.button1.Location = new System.Drawing.Point(192, 340);
+            this.button1.Location = new System.Drawing.Point(184, 335);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 41);
             this.button1.TabIndex = 11;
@@ -299,19 +317,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Create An Account";
             // 
-            // confirm
+            // linkLabel1
             // 
-            this.confirm.AutoSize = true;
-            this.confirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm.ForeColor = System.Drawing.Color.Black;
-            this.confirm.Location = new System.Drawing.Point(61, 396);
-            this.confirm.Name = "confirm";
-            this.confirm.Padding = new System.Windows.Forms.Padding(4);
-            this.confirm.Size = new System.Drawing.Size(404, 47);
-            this.confirm.TabIndex = 20;
-            this.confirm.Text = "Admin Registration Done";
-            this.confirm.Visible = false;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(302, 388);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(86, 17);
+            this.linkLabel1.TabIndex = 55;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login here";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(130, 388);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(166, 17);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Already have an Accout?";
             // 
             // AdminRegistation
             // 
@@ -319,7 +350,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.join_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 503);
             this.Controls.Add(this.panel1);
             this.Name = "AdminRegistation";
             this.Text = "AdminRegistation";
@@ -360,5 +391,7 @@
         private System.Windows.Forms.PictureBox addressallert;
         private System.Windows.Forms.PictureBox nameallert;
         private System.Windows.Forms.Label confirm;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label18;
     }
 }

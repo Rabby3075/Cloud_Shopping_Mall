@@ -17,7 +17,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void updateAdmin_Load(object sender, EventArgs e)
         {
             
@@ -97,6 +102,12 @@ namespace Cloud_Shopping_Mall.View
             name.Enabled = true;
             address.Enabled = true;
             mobile.Enabled = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AdminPortal().Show();
         }
     }
 }

@@ -16,7 +16,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void Register_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -24,17 +29,26 @@ namespace Cloud_Shopping_Mall.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new AdminRegistation().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new EmployeeReg().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new CustomerReg().Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new LoginPage().Show();
         }
     }
 }

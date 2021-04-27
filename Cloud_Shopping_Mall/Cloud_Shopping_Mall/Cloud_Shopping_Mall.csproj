@@ -51,6 +51,7 @@
     <Compile Include="Controller\AdminController.cs" />
     <Compile Include="Controller\CustomerController.cs" />
     <Compile Include="Controller\EmployeeController.cs" />
+    <Compile Include="Controller\ProductController.cs" />
     <Compile Include="Controller\ShopController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,10 +66,18 @@
     <Compile Include="Model\Database.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Employees.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Products.cs" />
     <Compile Include="Model\Shop.cs" />
     <Compile Include="Model\Shops.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +101,18 @@
     </Compile>
     <Compile Include="View\Customer Portal.Designer.cs">
       <DependentUpon>Customer Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CustomerReg.cs">
       <SubType>Form</SubType>
@@ -147,6 +168,18 @@
     <Compile Include="View\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductManagement.Designer.cs">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,11 +192,23 @@
     <Compile Include="View\Remove Shop.Designer.cs">
       <DependentUpon>Remove Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RemoveCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RemoveCustomer.Designer.cs">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\removeEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\removeEmployee.Designer.cs">
       <DependentUpon>removeEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RemoveProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RemoveProduct.Designer.cs">
+      <DependentUpon>RemoveProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ShopList.cs">
       <SubType>Form</SubType>
@@ -189,6 +234,12 @@
     <Compile Include="View\updateAdmin.Designer.cs">
       <DependentUpon>updateAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UpdateProduct.Designer.cs">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\updateShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +256,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AdminPortal.resx">
       <DependentUpon>AdminPortal.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +267,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\AllAdmin.resx">
       <DependentUpon>AllAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Portal.resx">
+      <DependentUpon>Customer Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CustomerReg.resx">
       <DependentUpon>CustomerReg.cs</DependentUpon>
@@ -241,14 +304,26 @@
     <EmbeddedResource Include="View\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Remove Shop.resx">
       <DependentUpon>Remove Shop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RemoveCustomer.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\removeEmployee.resx">
       <DependentUpon>removeEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RemoveProduct.resx">
+      <DependentUpon>RemoveProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ShopList.resx">
       <DependentUpon>ShopList.cs</DependentUpon>
@@ -261,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\updateAdmin.resx">
       <DependentUpon>updateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UpdateProduct.resx">
+      <DependentUpon>UpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\updateShop.resx">
       <DependentUpon>updateShop.cs</DependentUpon>
@@ -310,6 +388,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blur-shopping-mall_1203-8327.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rm27-ning-48-wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount-background-sale-vector-9280811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_119127780-stock-photo-blurred-abstract-background-of-people.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

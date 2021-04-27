@@ -59,9 +59,9 @@ namespace Cloud_Shopping_Mall.Controller
             e.Password = customer.Password;
             return db.Customers.UpdateCustomer(e);
         }
-        public static bool DeleteCustomer(string userName,string password)
+        public static bool DeleteCustomer(string userName)
         {
-            return db.Customers.DeleteCustomer(userName,password);
+            return db.Customers.DeleteCustomer(userName);
         }
         public static ArrayList GetAllCustomer()
         {

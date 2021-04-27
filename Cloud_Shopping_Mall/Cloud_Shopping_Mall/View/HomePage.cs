@@ -16,7 +16,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,12 +29,19 @@ namespace Cloud_Shopping_Mall.View
 
         private void lgn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new LoginPage().Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new Register().Show();
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

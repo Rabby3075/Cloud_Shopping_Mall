@@ -21,7 +21,12 @@ namespace Cloud_Shopping_Mall.View
         {
             InitializeComponent();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
         private void AdminRegistation_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -131,6 +136,7 @@ namespace Cloud_Shopping_Mall.View
                     if (result)
                     {
                         confirm.Visible = true;
+                        this.Hide();
                         new LoginPage().Show();
                     }
                 }
@@ -152,6 +158,12 @@ namespace Cloud_Shopping_Mall.View
                
             }
            
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new LoginPage().Show();
         }
     }
 }

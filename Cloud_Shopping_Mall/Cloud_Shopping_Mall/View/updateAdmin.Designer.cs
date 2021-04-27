@@ -35,14 +35,15 @@
             this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.mobile = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.mobile = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.address = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,64 +123,17 @@
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label4
+            // button3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(91, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Name";
-            // 
-            // name
-            // 
-            this.name.Enabled = false;
-            this.name.Location = new System.Drawing.Point(226, 30);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(236, 22);
-            this.name.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Present Address";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // address
-            // 
-            this.address.Enabled = false;
-            this.address.Location = new System.Drawing.Point(226, 80);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(236, 22);
-            this.address.TabIndex = 5;
-            this.address.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(57, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Mobile No";
-            // 
-            // mobile
-            // 
-            this.mobile.Enabled = false;
-            this.mobile.Location = new System.Drawing.Point(226, 137);
-            this.mobile.Name = "mobile";
-            this.mobile.Size = new System.Drawing.Size(236, 22);
-            this.mobile.TabIndex = 7;
+            this.button3.BackColor = System.Drawing.Color.Navy;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(362, 181);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(90, 33);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -193,17 +147,75 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // mobile
             // 
-            this.button3.BackColor = System.Drawing.Color.Navy;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(362, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 33);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.mobile.Enabled = false;
+            this.mobile.Location = new System.Drawing.Point(226, 137);
+            this.mobile.Name = "mobile";
+            this.mobile.Size = new System.Drawing.Size(236, 22);
+            this.mobile.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(57, 137);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 20);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Mobile No";
+            // 
+            // address
+            // 
+            this.address.Enabled = false;
+            this.address.Location = new System.Drawing.Point(226, 80);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(236, 22);
+            this.address.TabIndex = 5;
+            this.address.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(57, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(149, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Present Address";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // name
+            // 
+            this.name.Enabled = false;
+            this.name.Location = new System.Drawing.Point(226, 30);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(236, 22);
+            this.name.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(91, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Name";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.Location = new System.Drawing.Point(691, 17);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 29);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Back";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // updateAdmin
             // 
@@ -212,6 +224,7 @@
             this.BackgroundImage = global::Cloud_Shopping_Mall.Properties.Resources.purple_background_registration;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 531);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
@@ -247,5 +260,6 @@
         private System.Windows.Forms.TextBox mobile;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
     }
 }

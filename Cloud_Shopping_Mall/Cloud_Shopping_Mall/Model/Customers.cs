@@ -120,10 +120,10 @@ namespace Cloud_Shopping_Mall.Model
             if (r > 0) return true;
             return false;
         }
-        public bool DeleteCustomer(string userName,string password)
+        public bool DeleteCustomer(string userName)
         {
             conn.Open();
-            string query = String.Format("DELETE FROM Customer WHERE UserName='{0}' AND Password='{1}'", userName,password);
+            string query = String.Format("DELETE FROM Customer WHERE UserName='{0}'", userName);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();
